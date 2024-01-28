@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Yummy</title>
+
+                <!-- fontawesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+
+                <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+            
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <!-- css -->
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+    <body>
+
+     <div id="navbar">
+        <div id="side-bar">
+            <div id="nav-side" class="py-4 ps-4 d-flex flex-column justify-content-between">
+                <div class="top-side">
+                    <ul>
+                        <li><p id="search">Search</p></li>
+                        <li><p id="categories">Categories</p></li>
+                        <li><p id="area">Area</p></li>
+                        <li><p id="ingredients">Ingredients</p></li>
+                        <li><p id="contact">Contact Us</p></li>
+                    </ul>
+                </div>
+                <div class="bottom-side text-white">
+                    <div class="">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <p>Copyright Â© 2019 All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+    
+        </div>
+
+        <div id="nav-icons" class="d-flex flex-column justify-content-between text-center">
+            <img src="imgs/logo.png" class="w-100" alt="">
+            <i id="close-icon" class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+     </div>
+     
+
+     <div class="container">
+        <div class="row py-5 g-4 " id="rowData">
+            <div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+                <div class="container w-75 text-center">
+                    <div class="row g-4">
+
+                            <div class="col-md-6">
+                                <input id="nameInput" oninput="validationName()"  type="text" class="form-control" placeholder="Enter Your Name">
+                                <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Special characters and numbers not allowed
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input id="emailInput" oninput="validationEmail()" type="email" class="form-control " placeholder="Enter Your Email">
+                                <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Email not valid *exemple@yyy.zzz
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input id="phoneInput" oninput="validationPhone()" type="text" class="form-control " placeholder="Enter Your Phone">
+                                <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid Phone Number
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input id="ageInput" oninput="validationAge()" type="number" class="form-control " placeholder="Enter Your Age">
+                                <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid age
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input id="passwordInput" oninput="validationPassword()" type="password" class="form-control " placeholder="Enter Your Password">
+                                <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid password *Minimum eight characters, at least one letter and one number:*
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input id="repasswordInput" oninput="validationRepassword()" type="password" class="form-control " placeholder="Repassword">
+                                <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid repassword 
+                                </div>
+                            </div>
+
+                    </div>
+                    <button id="submitBtn" disabled="" class="btn btn-outline-danger px-2 mt-3">Submit</button>
+                    
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+
+
+
+
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+                <!-- bootstrap -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+                <!-- main js -->
+        <script src="js/contact.js"></script>
+    </body>
+</html>

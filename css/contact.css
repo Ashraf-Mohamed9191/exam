@@ -1,0 +1,47 @@
+body{
+    background-color: #0D0D0D;
+}
+/* ------------------navbar------------------ */
+#navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#side-bar{
+    display: none;
+}
+
+#nav-side{
+    width: 255px;
+    height: 100vh;
+    background-color: #0D0D0D;
+}
+
+#nav-icons{
+    width: 65px;
+    height: 100vh;
+    background-color: white;
+    padding: 20px 5px;
+}
+
+i{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    padding-top: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* --------------------contact-section--------------------- */
